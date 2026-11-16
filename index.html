@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Farmgate: fresh produce straight from the farm</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/"><img src="favicon.svg" alt="" width="32" height="32">Farmgate</a>
+  <nav id="nav" aria-label="Main"></nav>
+  <button id="cartBtn" aria-label="Open basket">Basket <span id="count">0</span></button>
+</header>
+<main id="view"></main>
+<div id="drawer">
+  <div class="scrim" data-close></div>
+  <aside aria-label="Your basket">
+    <div class="row sp"><h3>Your basket</h3><button class="ghost" data-close>Close</button></div>
+    <div id="cartBody"></div>
+  </aside>
+</div>
+<div id="toasts" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
